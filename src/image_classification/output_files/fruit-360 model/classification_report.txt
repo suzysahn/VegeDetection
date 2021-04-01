@@ -1,0 +1,30 @@
+                    precision    recall  f1-score   support
+
+        Pepper Red       1.00      1.00      1.00       222
+      Tomato Heart       1.00      1.00      1.00       228
+   Cucumber Ripe 2       1.00      1.00      1.00       156
+     Tomato Maroon       0.89      1.00      0.94       127
+          Tomato 4       1.00      1.00      1.00       160
+             Lemon       0.83      1.00      0.91       164
+     Pepper Yellow       1.00      1.00      1.00       222
+              Corn       1.00      0.59      0.74       150
+         Onion Red       0.80      0.98      0.88       150
+Tomato not Ripened       0.90      1.00      0.95       158
+  Onion Red Peeled       0.97      0.74      0.84       155
+     Tomato Yellow       0.99      1.00      1.00       153
+     Pepper Orange       1.00      0.99      1.00       234
+ Tomato Cherry Red       1.00      1.00      1.00       164
+     Cucumber Ripe       1.00      1.00      1.00       130
+      Potato Sweet       0.98      0.73      0.84       150
+          Tomato 1       1.00      1.00      1.00       246
+       Onion White       0.85      1.00      0.92       146
+      Potato White       0.84      0.99      0.91       150
+        Potato Red       0.85      0.83      0.84       150
+      Pepper Green       1.00      1.00      1.00       148
+          Tomato 3       1.00      1.00      1.00       246
+          Tomato 2       1.00      1.00      1.00       225
+ Potato Red Washed       1.00      0.93      0.96       151
+
+          accuracy                           0.96      4185
+         macro avg       0.95      0.95      0.95      4185
+      weighted avg       0.96      0.96      0.95      4185
