@@ -10,7 +10,6 @@ sudo -H pip3 install pybind11
 sudo -H pip3 install Cython==0.29.21
 sudo -H pip3 install h5py==2.10.0
 pip3 install gdown
-copy binairy
 sudo cp ~/.local/bin/gdown /usr/local/bin/gdown
 gdown https://drive.google.com/uc?id=1WDG8Rbi0ph0sQ6TtD3ZGJdIN_WAnugLO
 sudo -H pip3 install tensorflow-2.4.1-cp37-cp37m-linux_aarch64.whl
