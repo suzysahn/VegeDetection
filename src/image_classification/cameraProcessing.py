@@ -275,8 +275,15 @@ def scan_image():
         webcam.release()
         cv2.waitKey(10)
         cv2.destroyAllWindows()
-
+        crop_width = None
+        crop_height = None
         img_ = cv2.imread(imgpath, cv2.IMREAD_ANYCOLOR)
+        height, width = img_.shape[:2]
+        crop_width = height if width > height else width
+        crop_height = width if height > width else height
+        mid_x , mid_y = int(width/2), int(height/2)
+        cw2, ch2 = int(crop_width/2), int(crop_height/2)
+        img_= img_[mid_y-ch2:mid_y+ch2, mid_x-cw2:mid_x+cw2]
         img_ = cv2.resize(img_,(500,500))
         img_resized = cv2.imwrite(imgpath, img=img_)
         
@@ -322,6 +329,5 @@ test_model(name='vegeModel')
 # call object detection with file name and refrenece width
 image = display_meas(imgpath, 0.955)
 # show the image
-#cv2.imshow("Image", image)
 cv2.imwrite(savedpath, img=image)
 cv2.waitKey(0)
